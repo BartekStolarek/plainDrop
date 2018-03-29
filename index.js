@@ -18,12 +18,12 @@ app.use(bodyParser.json());
 app.use(methodOverride('_method'));
 app.set('view engine', 'ejs');
 
-let s3 = new aws.S3({
-    mongoCredentials: process.env.mongoURI
-});
+// let s3 = new aws.S3({
+//     mongoCredentials: process.env.mongoURI
+// });
 
 //Provide your mongoURI here- it can be local database or remote
-const mongoURI = s3.mongoCredentials;
+const mongoURI = process.env.MONGO_URI;
 
 const conn = mongoose.createConnection(mongoURI);
 
