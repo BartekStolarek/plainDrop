@@ -8,6 +8,7 @@ const multerGridStorage = require('multer-gridfs-storage');
 const gridStream = require('gridfs-stream');
 const methodOverride = require('method-override');
 const url = require('url');
+const aws = require('aws-sdk');
 
 const app = express();
 
@@ -17,8 +18,12 @@ app.use(bodyParser.json());
 app.use(methodOverride('_method'));
 app.set('view engine', 'ejs');
 
+let s3 = new aws.S3({
+    mongoCredentials: process.env.mongoURI
+});
+
 //Provide your mongoURI here- it can be local database or remote
-const mongoURI = '';
+const mongoURI = s3.mongoCredentials;
 
 const conn = mongoose.createConnection(mongoURI);
 
