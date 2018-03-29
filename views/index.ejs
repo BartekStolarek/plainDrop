@@ -104,14 +104,16 @@
             <hr class="my-4">
             <p class="lead">Just press the "Select File" button, select your file and share a link with your friends!</p>
             <p class="lead">By uploading a file you are accepting the <a href="regulations" target="_blank">terms of use</a>.</p>
-            <form action="/upload" method="POST" enctype="multipart/form-data">
+            <form action="/upload" method="POST" enctype="multipart/form-data" id="upload-form" onsubmit="onSubmitForm()">
                 <div class="row">
                     <label class="custom-file-upload">
                         <input type="file" name="file" id="file"/>
                             <span id="input-label">Select File</span>
                     </label>
                 </div>                
-                <input type="submit" id="upload" value="Upload" class="btn btn-primary btn-lg" disabled>
+                <button type="submit" id="upload" class="btn btn-primary btn-lg" disabled>
+                    Upload
+                </button>
             </form>
             </div>
         </div>
@@ -208,6 +210,10 @@
                     document.getElementById("navbarColor02").classList.remove("collapse");
                 else
                     document.getElementById("navbarColor02").classList.add("collapse");
+            }
+
+            function onSubmitForm() {
+                document.getElementById("upload").innerHTML = "Uploading <img src='../public/spinner.gif' />";
             }
         </script>
 
