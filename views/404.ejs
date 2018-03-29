@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css"
+        crossorigin="anonymous">
+        <title>plainDrop - 404</title>
+
+        <style>
+            body {
+                background-color: #eee;
+            }
+            .top {
+                background: url('../public/background.jpeg');
+                background-color: #111;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                text-align: center;
+                text-shadow: 1px 1px #000;
+            }
+            .bottom {
+                background-color: #fff;
+            }
+            .block {
+                text-align: center;
+                color: #111;
+                transition: 0.4s;
+            }
+            .block:hover {
+                background-color: #eee;
+            }
+            .icon {
+                margin-bottom: 20px;
+            }
+            input[type="file"] {
+                display: none;
+            }
+            .custom-file-upload {
+                border: 1px solid #ccc;
+                display: inline-block;
+                padding: 6px 12px;
+                cursor: pointer;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .second {
+                margin-top: 35px;
+            }
+            .footer {
+                margin-bottom: 0;
+                text-align: center;
+            }
+            .custom-file-upload {
+                transition: 0.4s;
+            }
+            .custom-file-upload:hover {
+                opacity: 0.7;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">plainDrop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation" style="">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">About</a>
+                </li>
+                </ul>
+                <div class="my-2 my-lg-0">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="regulations">Terms of use</a>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </nav>
+        
+        <div class="jumbotron top">
+            <h1 class="display-2">404</h1>
+            <p class="lead">Sorry, this page doesn't exists.</p>
+            <p class="lead">Take me to the <a href="/">homepage</a>.</p>
+        </div>
+        <div class="jumbotron bottom" id="features">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="block">
+                        <div class="icon">
+                            <img src="../public/document.png" alt="File Size">
+                        </div>
+                        <h4>Maximum file size?</h4>
+                        <p class="lead">The maximum file size you can upload is 16 MB</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="block">
+                        <div class="icon">
+                            <img src="../public/link.png" alt="File Size">
+                        </div>
+                        <h4>Who can see my file?</h4>
+                        <p class="lead">Only people who has got a link. The files are not shared to everyone.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="block">
+                        <div class="icon">
+                            <img src="../public/database.png" alt="File Size">
+                        </div>
+                        <h4>How long my file is available?</h4>
+                        <p class="lead">You file is available as long as possible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row second">
+                    <div class="col-md-4">
+                        <div class="block">
+                            <div class="icon">
+                                <img src="../public/money.png" alt="File Size">
+                            </div>
+                            <h4>How much it costs?</h4>
+                            <p class="lead">You can upload your files completely free.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="block">
+                            <div class="icon">
+                                <img src="../public/law.png" alt="File Size">
+                            </div>
+                            <h4>How is responsible for the files?</h4>
+                            <p class="lead">The site is not responsible for any illegal files. By uploading the files, you are accepting the following <a href="/regulations" target="_blank">regulations</a>. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="block">
+                            <div class="icon">
+                                <img src="../public/registration.png" alt="File Size">
+                            </div>
+                            <h4>Is registration necessary?</h4>
+                            <p class="lead">No, you don't have to register to upload files.</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="jumbotron footer" id="footer">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="lead">plainDrop</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="lead">Owner&Site Creator</p> <b>Bartosz Stolarek</b>
+                    
+                </div>
+                <div class="col-md-4">
+                    <p class="lead"><a href="https://github.com/BartekStolarek/plainDrop" target="_blank">View Code on GitHub</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
